@@ -9,8 +9,7 @@ fn main() {
     println!("Welcome to the Game");
     let secret_num = rand::thread_rng().gen_range(1..101);
     //println!("Secret number is : {}",secret_num);
-
-
+    loop{
     println!("input your guess number");
     let mut guess = String::new();
     io::stdin().read_line(&mut guess)
@@ -21,6 +20,11 @@ fn main() {
     match guess.cmp(&secret_num){
         Ordering:: Less => println!("Lesser bro"),
         Ordering:: Greater => println!("Too big bro num"),
-        Ordering:: Equal => println!("Dammnn bro you win"),
+        Ordering:: Equal => {
+            println!("Dammnn bro you win");
+            break;
+            }
+        }   
     }
+
 }
