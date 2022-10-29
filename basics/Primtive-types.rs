@@ -21,3 +21,7 @@ fn overwrite_type() {
     let some_string = donut";
     let some_string = some_string.len();
 
+// Strings
+ fn strings() {
+    let some_slice: &str = "donut"; // Slice
+    let some_string: String = String::from("donut"); // String
