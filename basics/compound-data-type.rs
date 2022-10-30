@@ -37,7 +37,7 @@ fn vectors() {
     }
     // Append
     vector.push(-2);
-    println!("{}", vector[vector.len() - 1]);
+    println!("{}", vector[vector.len() - 1]);  //last value
     println!("{:?}", vector.pop());
 }
 
