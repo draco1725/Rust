@@ -19,4 +19,4 @@ fn main() {
 }
 
   println!("{}",num);
-}
+} //it gets print out
