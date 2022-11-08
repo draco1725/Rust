@@ -30,3 +30,13 @@ fn run(x:i32,y:i32) -> i32{  //now here have returned the value by stating it
   //println!("{}","{}",x,y);
   return x*y
 }
+
+
+fn main{
+  println!("{}",is_even(2));
+}  
+
+pub fn is_even(num:u8) -> bool {  //pub: it means the function is public
+  let digit: u8 = num % 2;
+  digit == 0; //return bool
+}
